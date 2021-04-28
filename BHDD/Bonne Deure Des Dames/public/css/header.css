@@ -1,0 +1,160 @@
+            nav.menu{
+                background: #cb92a1;
+                width: 100vw;
+                height: 66px;
+                line-height: 66px;
+                align-content: center;
+                position: fixed;
+                border: none;
+                padding: 0 30px;
+                z-index: 10;
+              }
+
+
+              .m-left{
+                float: left;
+                z-index: 99;
+              }
+
+
+
+
+
+              .logo{
+                margin: 0;padding: 0;
+                color: #fff;
+               pour mettre en maj
+               text-transform: uppercase;
+                font-weight: 900;
+                font-size: 25px;
+                letter-spacing: 1px;
+                text-shadow: 1px 1px 10px black;
+
+              }
+              .logo:hover{
+                color: #a3dbd3;
+              }
+
+
+
+
+              .m-right{
+                float: right;
+
+              }
+
+              i:hover{
+                color: #a3dbd3;
+              }
+
+
+              .m-link{
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 15px;
+
+                padding: 0;margin: 0 10px;
+                /*transition lors du passage du menu*/
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 12px;
+                  text-shadow: 1px 1px 10px black;
+            }
+              .m-link:hover{
+
+                color:#a3dbd3 ;
+                border-bottom: 8px solid gold;
+              }
+
+
+              /*regle pour dire que le curseur change */
+              .m-link:hover{
+                border-color: #a3dbd3;
+              }
+
+
+              .m-link i{
+                margin-right: 5px;
+              }
+
+              .m-nav-toggle{
+                width: 40px;
+                height: 66px;
+                display: none;
+                align-items: center;
+                float: right;
+                cursor: pointer;
+              }
+
+
+/*..............................  menu telephone   ....................................................*/
+
+
+              span.m-toggle-icon, span.m-toggle-icon:before, span.m-toggle-icon:after{
+                content: "";
+                display:block;
+                width: 100%;
+                height: 4px;
+                background: #a3dbd3;
+                position: relative;
+                transform-origin: center;
+               transition: all 0.3s ease-in-out;
+               z-index: 99;
+              }
+
+              span.m-toggle-icon:before{top: 10px;}
+              span.m-toggle-icon:after{top: -12px;}
+
+              .m-right.is-open{
+                transform: translateX(0);
+              }
+
+              .m-nav-toggle.is-open span.m-toggle-icon{
+
+                background: transparent;
+              }
+              .m-nav-toggle.is-open span.m-toggle-icon:after{
+
+                transform: rotate(45deg);
+                top: 0;
+              }
+              .m-nav-toggle.is-open span.m-toggle-icon:before{
+
+                transform: rotate(-40deg);
+                top: 0;
+              }
+
+              @media only screen and (max-width: 1350px) {
+                .m-right{
+
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  width: 25%;
+                  padding: 2%;
+                  height: auto;
+                  background: #cb92a1;
+                  transform: translateY(-100%);
+                  transition: all 0.3s ease-in-out;
+                  z-index: 2;
+                }
+
+#p1{
+  text-align: center;
+  margin: 20%;
+}
+
+                .m-link{
+                  display: block;
+                  padding:0; margin:35 ;
+                  height: 55px;
+                }
+
+                .m-nav-toggle{
+                  display: flex;
+
+                }
+              }
